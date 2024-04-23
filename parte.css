@@ -1,0 +1,74 @@
+.container {
+  width: 300px;
+  /*largura*/
+  height: 500px;
+  /*Altura*/
+  border: 1px solid #000;
+  /*Desenha a linha borda*/
+  margin-top: 200px;
+  /*Margem superior*/
+}
+
+.absolutely-positioned {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid #f00;
+}
+
+
+.relatively-positioned {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  border: 1px solid #f00;
+}
+
+
+.sombra-azul{
+  box-shadow: 0 0 10px rgb(0,0,255);
+}
+
+.fixed-position {
+  position: fixed;top: 20px;
+  left: 20px;
+  background-color: #f00;
+  color: #fff;
+  padding: 10px;
+  }
+
+  .gradiente-linear{
+    margin-top: 30px;
+    padding: 20px;
+    background-image: linear-gradient(to right, red, yellow);
+
+  }
+
+  .mixer{
+    position: relative;
+    overflow: hidden;
+  }
+  .sobrepor{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgb(41, 36, 36);
+    mix-blend-mode:luminosity;
+  }
+
+  .container-sticky {
+    height: 2000px;
+    border: 1px solid #000;
+    }
+
+    .sticky-element {
+      position: -webkit-sticky;/* Para compatibilidade com navegadores WebKit */
+      position: sticky;
+      top: 0; /* Ponto de ativação */
+      background-color: #f00;
+      color: #fff;
+      padding: 10px;
+      z-index: 1000;
+      /* Z-index para garantir que fique acima do conteúdo */}
